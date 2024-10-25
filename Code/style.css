@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+:root {
+    --netflix-color: rgb(229, 9, 20);
+    --border: rgb(42, 42, 42);
+}
+
+html {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.navbar {
+    justify-content: space-between !important;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    background-color: transparent;
+    width: 75vw;
+    height: 80px;
+    margin: 0 12.5vw;
+}
+
+.sign-in {
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 8px 16px;
+    background-color: var(--netflix-color);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.25s linear;
+}
+
+.sign-in:hover {
+    background-color: rgb(255, 42, 53);
+}
+
+.container-1 {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    background-image: url('/assets/img/bg.jpg');
+    background-position: center center;
+    box-shadow: inset 0px 0px 1250px 20px black;
+    border-bottom: 7px solid var(--border);
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    text-align: center;
+    width: 80vw;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.para-1 {
+    font-size: 1.4rem;
+    margin: 24px 0;
+}
+
+.para-2 {
+    font-size: 1.2rem;
+    margin: 16px 0;
+}
+
+.input-container {
+    height: 56px;
+}
+
+.email-input {
+    padding: 0 20px;
+    font-size: 1.1rem;
+    background-color: rgba(18, 18, 18, 0.725);
+    border: none;
+    height: 100%;
+    width: 383.263px;
+    margin-right: 20px;
+    border-radius: 4px;
+    border: 0.5px solid var(--border);
+}
+
+.get-started {
+    width: 190px;
+    height: 56px;
+    border: none;
+    font-size: 1.6rem;
+    border-radius: 4px;
+    background-color: var(--netflix-color);
+    cursor: pointer;
+    transition: background-color 0.25s linear;
+}
+
+.get-started:hover {
+    background-color: rgb(255, 42, 53);
+}
+
+.container-2 {
+    width: 100%;
+    min-height: 85vh;
+    border-bottom: 7px solid var(--border);
+    overflow: hidden;
+}
+
+.sec-1 {
+    width: 35vw;
+}
+
+.sec-2 {
+    position: relative;
+    background-color: transparent;
+    width: 640px;
+    height: 480px;
+}
+
+.sec-2 img {
+    position: relative;
+    z-index: 2;
+}
+
+.video-1 {
+    height: 263px;
+    position: absolute;
+    top: 20.7%;
+    left: 13%;
+    z-index: 1;
+}
+
+.video-2 {
+    height: 224px;
+    position: absolute;
+    top: 10.7%;
+    left: 19%;
+    z-index: 1;
+}
+
+.faq {
+    width: 100vw;
+    flex-direction: column;
+}
+
+.faq-cards {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    padding: 28px;
+    min-width: 80vw;
+    background-color: var(--border);
+    margin-bottom: 10px;
+    transition: all 250ms linear;
+}
+
+.faq-cards:hover {
+    background-color: rgb(72, 72, 72);
+    cursor: pointer;
+}
+
+span {
+    font-size: 1.6rem;
+}
+
+.faq-head {
+    font-size: 2.8rem;
+    font-weight: 900;
+    padding: 40px;
+}
+
+.inp {
+    padding: 50px;
+}
+
+.nav-link {
+    width: 75vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    row-gap: 15px;
+}
+
+a {
+    color: inherit;
+}
+
+.ques {
+    grid-column: 1/4;
+    padding-bottom: 32px;
+}
+
+.list-items {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.726);
+    list-style: none;
+}
+
+.footer {
+    min-height: 75vh;
+    border-bottom: none;
+    flex-direction: column;
+}
+
+.ending {
+    min-width: 75vw;
+}
+
+.language {
+    position: relative;
+}
+
+.globe {
+    position: absolute;
+    left: 11px;
+    top: 49px;
+}
+
+select {
+    background-color: rgba(18, 18, 18, 0.725);
+    margin-top: 40px;
+    margin-bottom: 25px;
+    width: 150px;
+    font-size: 1.1rem;
+    padding: 6px 20px 6px 30px;
+    border-radius: 4px;
+}
+
+.last {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.726);
+}
+
+.stranger-things {
+    min-width: 640px;
+    height: 480px;
+    object-position: relative;
+}
+
+.text {
+    padding: 19px;
+    margin-right: 61px;
+}
+
+.text2 {
+    font-size: 0.9rem;
+    color: rgb(66, 66, 255);
+}
+
+.banner {
+    width: 53px;
+}
+
+.down-icon {
+    width: 54px;
+}
+
+.strange {
+    display: flex;
+    z-index: 2;
+    border-radius: 16px;
+    border: 2px solid var(--border);
+    background-color: black;
+    width: 54%;
+    height: 92px;
+    position: absolute;
+    top: 71%;
+    left: 23%;
+    padding: 10px;
+    align-items: center;
+}

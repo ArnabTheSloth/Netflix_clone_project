@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--This is my first full fledged cloned project made with pure HTML, CSS and Javascript. The date is 03/09/2024. The UI of Netflix was different from the one at the tutorial I was referring to. So I somehow managed to find the UI of May, 2023 from this site: https://web.archive.org/web/20230520135345/https://www.netflix.com/de-en/-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone Project - Made with pure HTML, CSS and Javascript</title>
+    <link rel="stylesheet" href="/Code/utility.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/img/nficon2016.ico" type="image/x-icon">
+</head>
+
+
+<body>
+    <div class="navbar flex">
+        <img src="/assets/img/logo.svg" style="height: 50%;" alt="">
+        <button class="sign-in">Sign in</button>
+    </div>
+    <div class="container-1">
+        <div class="overlay flex">
+            <div class="content">
+                <h1 class="heading">Unlimited movies, TV shows, and more</h1>
+                <p class="para-1">Watch anywhere. Cancel anytime</p>
+                <p class="para-2">Ready to watch? Enter your email to create or restart your membership.</p>
+                <div class="input-container">
+                    <input type="email" id="email" class="email-input" required placeholder="Email address">
+                    <label for="email" class="email-label"></label>
+                    <button class="get-started">Get Started<img src="/assets/img/great.svg" alt=""
+                            style="position: relative; top: 3px;"></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-2 flex"> <!-- This is the first section -->
+        <div class="sec-1">
+            <h2 style="font-size: 2.8rem; font-weight: 900; margin-bottom: 15px;">Enjoy on your TV</h2>
+            <p style="font-size: 1.4rem;">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players,
+                and more.</p>
+        </div>
+        <div class="sec-2">
+            <video autoplay loop muted class="video-1">
+                <source src="/assets/videos/video-tv-0819(2).mp4" type="video/mp4">
+            </video>
+            <img src="/assets/img/tv.png" alt="">
+        </div>
+    </div>
+    <div class="container-2 flex"><!-- This is the second section -->
+        <div class="sec-2 stranger-things">
+            <img src="/assets/img/mobile-0819.jpg" alt="">
+            <div class="strange">
+                <img src="/assets/img/boxshot.png" alt="" class="banner">
+                <div class="text">
+                    <p class="text1">Stranger Things</p>
+                    <p class="text2">Downloading...</p>
+                </div>
+                <img src="/assets/img/download-icon.gif" alt="" class="down-icon">
+            </div>
+        </div>
+        <div class="sec-1">
+            <h2 style="font-size: 2.8rem; font-weight: 900; margin-bottom: 15px;">Download your shows to watch offline
+            </h2>
+            <p style="font-size: 1.4rem;">Save your favorites easily and always have something to watch.</p>
+        </div>
+    </div>
+    <div class="container-2 flex"><!-- This is the Third section -->
+        <div class="sec-1">
+            <h2 style="font-size: 2.8rem; font-weight: 900; margin-bottom: 15px;">Watch everywhere</h2>
+            <p style="font-size: 1.4rem;">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+            </p>
+        </div>
+        <div class="sec-2">
+            <video autoplay loop muted class="video-2">
+                <source src="/assets/videos/video-devices(2).mp4" type="video/mp4">
+            </video>
+            <img src="/assets/img/device-pile.png" alt="">
+        </div>
+    </div>
+    <div class="container-2 flex"><!-- This is the fourth section -->
+        <div class="sec-2">
+            <img src="/assets/img/kids.png" alt="">
+        </div>
+        <div class="sec-1">
+            <h2 style="font-size: 2.8rem; font-weight: 900; margin-bottom: 15px;">Create profiles for kids</h2>
+            <p style="font-size: 1.4rem;">Send kids on adventures with their favorite characters in a space made just
+                for them—free with your membership.</p>
+        </div>
+    </div>
+    <div class="container-2 flex faq"><!-- This is the fifth section -->
+        <h2 class="faq-head">Frequently Asked Questions</h2>
+        <div class="faq-cards">What can I watch on Netflix?<span>+</span></div>
+        <div class="faq-cards">What is Netflix?<span>+</span></div>
+        <div class="faq-cards">How much does netflix cost?<span>+</span></div>
+        <div class="faq-cards">Where can I watch?<span>+</span></div>
+        <div class="faq-cards">How do I cancel?<span>+</span></div>
+        <div class="faq-cards">Is Netflix good for kids?<span>+</span></div>
+        <div class="inp">
+            <p class="para-2">Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="input-container">
+                <input type="email" id="email" class="email-input" required placeholder="Email address">
+                <label for="email" class="email-label"></label>
+                <button class="get-started">Get Started<img src="/assets/img/great.svg" alt=""
+                    style="position: relative; top: 3px;"></button>
+            </div>
+        </div>
+    </div>
+    <div class="container-2 flex footer">
+        <ul class="nav-link">
+            <li class="list-items ques">Questions? Call <a href="#">0800-000-7969</a></li>
+            <li class="list-items"><a href="#">FAQ</a></li>
+            <li class="list-items"><a href="#">Cancel Membership</a></li>
+            <li class="list-items"><a href="#">Help Center</a></li>
+            <li class="list-items"><a href="#">Account</a></li>
+            <li class="list-items"><a href="#">Media Center</a></li>
+            <li class="list-items"><a href="#">Investor Relations</a></li>
+            <li class="list-items"><a href="#">Jobs</a></li>
+            <li class="list-items"><a href="#">Netflix Shop</a></li>
+            <li class="list-items"><a href="#">Redeem Gift Cards</a></li>
+            <li class="list-items"><a href="#">Buy Gift Cards</a></li>
+            <li class="list-items"><a href="#">Ways to Watch</a></li>
+            <li class="list-items"><a href="#">Terms of Use</a></li>
+            <li class="list-items"><a href="#">Privacy</a></li>
+            <li class="list-items"><a href="#">Cookie Preferences</a></li>
+            <li class="list-items"><a href="#">Impressum</a></li>
+            <li class="list-items"><a href="#">Contact Us</a></li>
+            <li class="list-items"><a href="#">Speed Test</a></li>
+            <li class="list-items"><a href="#">Legal Guarantee</a></li>
+            <li class="list-items"><a href="#">Legal Notices</a></li>
+            <li class="list-items"><a href="#">Only on Netflix</a></li>
+        </ul>
+        <div class="ending">
+            <div class="language">
+                <img src="/assets/img/globe.svg" alt="" class="globe">
+                <select name="language" id="language">
+                    <option value="English">English</option>
+                    <option value="Bangla">Bangla</option>
+                    <option value="Hindi">Hindi</option>
+                </select>
+            </div>
+
+            <p class="last">Netflix Bangladesh</p>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
